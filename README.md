@@ -43,6 +43,10 @@ cough_disease_detector/
    ```
    This command builds/starts the backend API and frontend UI containers defined in the root `docker-compose.yml`.
 
+## Frontend Preview
+
+![Cough Disease Detector UI](ui.png)
+
 ## Notes
 - Keep the model filename as `cough_detector.pth` so the backend loader (`cough_disease_backend/app/models/loader.py`) can find it without code changes.
 - If you retrain the model, repeat step 2 to refresh the backend weights before running `docker compose`.
