@@ -1,4 +1,4 @@
-# Cough Disease Detector – Monorepo
+# Cough Disease Detector
 
 <div align="center">
   <img src="ui.png" alt="Cough Disease Detector UI" />
