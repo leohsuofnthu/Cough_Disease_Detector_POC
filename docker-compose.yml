@@ -11,7 +11,7 @@ services:
       BACKEND_ALLOWED_ORIGINS: '["http://localhost:3000","http://127.0.0.1:3000"]'
     volumes:
       - ./cough_disease_backend/models:/weights:ro
-      - ./cough_detector:/app/cough_detector:ro
+      - ./cough_disease_detector:/app/cough_detector:ro
     ports:
       - "8000:8000"
 
