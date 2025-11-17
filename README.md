@@ -1,5 +1,9 @@
 # Cough Disease Detector – Monorepo
 
+<div align="center">
+  <img src="ui.png" alt="Cough Disease Detector UI" />
+</div>
+
 This repository hosts the complete cough-detection application:
 
 1. **Model training** (`cough_detector/`): PyTorch pipeline that produces a PANNs-based classifier.
@@ -42,10 +46,6 @@ cough_disease_detector/
    docker compose up --build
    ```
    This command builds/starts the backend API and frontend UI containers defined in the root `docker-compose.yml`.
-
-## Frontend Preview
-
-![Cough Disease Detector UI](ui.png)
 
 ## Notes
 - Keep the model filename as `cough_detector.pth` so the backend loader (`cough_disease_backend/app/models/loader.py`) can find it without code changes.
