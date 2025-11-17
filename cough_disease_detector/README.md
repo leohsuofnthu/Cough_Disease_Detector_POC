@@ -98,12 +98,19 @@ python inference.py \
 
 ```
 cough_detector/
-├── models.py / trainer.py / staged_training.py / losses.py
-├── unified_data_processor.py / data_loader.py
-├── config.py / pytorch_utils.py
-├── inference.py / requirements.txt / README.md
-├── data/ | processed_data/ | pretrained/ | workspace/
-└── ...
+├── config.py                 # Central hyper‑parameters & paths
+├── models.py                 # Model definitions (PANNs backbone + heads)
+├── trainer.py                # Stage-specific training loops
+├── staged_training.py        # Orchestrates Stage 1 + Stage 2 runs
+├── losses.py / pytorch_utils.py
+├── unified_data_processor.py # Cleans & merges COUGHVID/ICBHI metadata
+├── data_loader.py            # Dataset + dataloader builders
+├── inference.py              # CLI entry-point for single/batch inference
+├── requirements.txt / README.md
+├── data/                     # Raw datasets (ignored)
+├── processed_data/           # HDF5s produced by preprocessing
+├── pretrained/               # External CNN14 weights (.gitkeep only)
+└── workspace/                # Logs, checkpoints, tensorboard runs
 ```
 
 ## 🔧 Configuration & Monitoring
