@@ -38,7 +38,13 @@ This repository implements a streamlined 2-stage transfer learning pipeline for 
    # Optional: installs ffmpeg if missing
    conda install -c conda-forge ffmpeg
    ```
-3. **Verify setup**
+3. **Download pretrained CNN14 weights**
+   ```bash
+   curl -L -o pretrained/Cnn14_mAP=0.431.pth \
+     https://zenodo.org/records/3987831/files/Cnn14_mAP=0.431.pth?download=1
+   ```
+   The `pretrained/` directory includes a `.gitkeep` placeholder; place the downloaded file there before running any training scripts.
+4. **Verify setup**
    ```bash
    python -c "import torch, librosa; print(torch.__version__, librosa.__version__)"
    python -c "from pydub import AudioSegment; print('pydub OK')"
