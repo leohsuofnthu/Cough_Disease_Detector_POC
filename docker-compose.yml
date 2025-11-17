@@ -1,0 +1,30 @@
+services:
+  backend:
+    build:
+      context: ./cough_disease_backend
+    image: cough-disease-backend:dev
+    container_name: cough-disease-backend
+    environment:
+      BACKEND_MODEL_WEIGHTS_PATH: /weights/cough_detector.pth
+      BACKEND_DEVICE: cpu
+      BACKEND_LOG_LEVEL: INFO
+      BACKEND_ALLOWED_ORIGINS: '["http://localhost:3000","http://127.0.0.1:3000"]'
+    volumes:
+      - ./cough_disease_backend/models:/weights:ro
+      - ./cough_detector:/app/cough_detector:ro
+    ports:
+      - "8000:8000"
+
+  frontend:
+    build:
+      context: ./cough_disease_ui_pro
+    image: cough-disease-frontend:dev
+    container_name: cough-disease-frontend
+    environment:
+      EXPO_PUBLIC_API_URL: http://localhost:8000/v1/infer
+      CI: "1"
+      HOST: 0.0.0.0
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend

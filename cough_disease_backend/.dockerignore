@@ -1,0 +1,17 @@
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+*.log
+*.tmp
+.env
+.venv
+venv
+build
+dist
+node_modules
+.DS_Store
+*.pth
+runtime_tmp
+tests
+.git

@@ -1,0 +1,112 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyTorch
+*.pth
+*.pt
+*.pkl
+*.pickle
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# Environment variables
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Project specific
+# Data files (large datasets) - but keep .gitkeep files
+data/stage1/*
+!data/stage1/.gitkeep
+data/stage2/*
+!data/stage2/.gitkeep
+data/*.h5
+data/*.wav
+data/*.webm
+data/*.mp3
+data/*.ogg
+
+# Processed data - but keep .gitkeep files
+processed_data/*
+!processed_data/.gitkeep
+*.h5
+
+# Training outputs - but keep .gitkeep files
+workspace/*
+!workspace/.gitkeep
+!workspace/checkpoints/
+!workspace/logs/
+logs/
+results/
+checkpoints/
+tensorboard_logs/
+
+# Pretrained models (large files) - but keep .gitkeep files
+pretrained/*
+!pretrained/.gitkeep
+*.pth
+*.pt
+
+# Temporary files
+temp/
+tmp/
+*.tmp
+*.temp
+
+# Audio files
+*.wav
+*.mp3
+*.webm
+*.ogg
+*.flac
+*.m4a
+
+# Large files
+*.zip
+*.tar.gz
+*.rar

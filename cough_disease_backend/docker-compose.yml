@@ -1,0 +1,16 @@
+version: "3.9"
+
+services:
+  backend:
+    build: .
+    image: cough-disease-backend:latest
+    container_name: cough-disease-backend
+    environment:
+      BACKEND_MODEL_WEIGHTS_PATH: /weights/cough_detector.pth
+      BACKEND_DEVICE: cpu
+      BACKEND_LOG_LEVEL: INFO
+      BACKEND_ALLOWED_ORIGINS: '["http://localhost:3000","http://127.0.0.1:3000"]'
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./models:/weights:ro

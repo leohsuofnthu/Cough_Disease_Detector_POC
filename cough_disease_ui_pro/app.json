@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "Cough Disease Detector",
+    "slug": "cough_disease_ui_pro",
+    "version": "1.0.0",
+    "scheme": "coughdisease",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#F7FAFC"
+    },
+    "web": {
+      "bundler": "metro",
+      "favicon": "./assets/favicon.png"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#F7FAFC"
+      }
+    },
+    "experiments": {
+      "typedRoutes": false
+    }
+  }
+}
+
