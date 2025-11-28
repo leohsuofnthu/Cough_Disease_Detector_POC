@@ -3,11 +3,11 @@
 <div align="center">
   <table>
     <tr>
-      <td align="center" width="50%">
-        <img src="architecture_diagram.png" alt="Architecture Diagram" style="max-width: 50%; height: 500; width: 300;" />
+      <td align="center" width="55%">
+        <img src="architecture_diagram.png" alt="Architecture Diagram" style="max-width: 55%; height: 500; width: 300;" />
       </td>
-      <td align="center" width="50%">
-        <img src="ui.png" alt="Cough Disease Detector UI" style="max-width: 50%; height: 500; width: 300;" />
+      <td align="center" width="45%">
+        <img src="ui.png" alt="Cough Disease Detector UI" style="max-width: 45%;60 height: 500; width: 300;" />
       </td>
     </tr>
   </table>
