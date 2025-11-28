@@ -1,8 +1,16 @@
 # Cough Disease Detector
 
-<div align="center" style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
-  <img src="architecture_diagram.png" alt="Architecture Diagram" style="max-width: 48%; height: auto;" />
-  <img src="ui.png" alt="Cough Disease Detector UI" style="max-width: 48%; height: auto;" />
+<div align="center">
+  <table>
+    <tr>
+      <td align="center" width="50%">
+        <img src="architecture_diagram.png" alt="Architecture Diagram" style="max-width: 100%; height: auto; width: 500px;" />
+      </td>
+      <td align="center" width="50%">
+        <img src="ui.png" alt="Cough Disease Detector UI" style="max-width: 100%; height: auto; width: 500px;" />
+      </td>
+    </tr>
+  </table>
 </div>
 
 This repository hosts the complete cough-detection application:
