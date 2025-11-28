@@ -4,10 +4,10 @@
   <table>
     <tr>
       <td align="center" width="50%">
-        <img src="architecture_diagram.png" alt="Architecture Diagram" style="max-width: 50%; height: auto; width: auto;" />
+        <img src="architecture_diagram.png" alt="Architecture Diagram" style="max-width: 50%; height: 500; width: 300;" />
       </td>
       <td align="center" width="50%">
-        <img src="ui.png" alt="Cough Disease Detector UI" style="max-width: 50%; height: auto; width: auto;" />
+        <img src="ui.png" alt="Cough Disease Detector UI" style="max-width: 50%; height: 500; width: 300;" />
       </td>
     </tr>
   </table>
